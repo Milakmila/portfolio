@@ -5,11 +5,29 @@
 }
 
 :root{
-    background: #1C1A5E;
-    --blue-king: #1C1A5E;
+    background: #081870;
+    --blue-king: #081870;
     --fucsia: #CA6FFA;
     --purple:#8232D1;
     --blue-baby: #44B9F1;
     --blue-pale:#059BBC;
 
 }
+a{
+    text-decoration: none;
+}
+h1{
+   font-size: 2.25em; 
+   color: var(--fucsia);
+}
+h2{
+    font-size: 1.8em; 
+    color: var(--blue-baby);
+ }
+ h3{
+     color: white;
+     
+ }
+ p{
+     color: white;
+ }
