@@ -31,3 +31,121 @@ h2{
  p{
      color: white;
  }
+
+ /*HEADER*/
+ header{
+     display: grid;
+     grid-template-areas:
+     "logo"
+     "items"
+    ;
+     
+ }
+ body{
+     text-align: center;
+ }
+ .logo{
+     grid-area: logo;
+     margin: 20px;
+     justify-self: center;
+
+ }
+.dropdown{
+    grid-area:items ;
+    justify-self: center;
+    align-self: center;
+}
+.down-arrow{
+    justify-self: baseline;
+    margin-left: 30px;
+  }
+  .down-arrow i{
+    color: var(--blue-baby);
+    font-size:30px ;
+  
+  }
+  
+  #chk-menu{
+    display: none;
+  }
+  #chk-menu:checked ~ .items{
+    display: block;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .btn-dropdown{
+      
+    color: white;
+    cursor: pointer;/*Al pasar por encima muestra la manito*/
+  }
+  .items{
+      display: none;
+    justify-self: center;
+   
+    padding: 10px 150px;
+  }
+  
+  .item{
+    padding: 0.7rem;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+  }
+  .item:hover{
+    color: var(--blue-baby);
+  }
+
+/*Principal*/
+
+.social a{
+    color: var(--blue-baby);
+}
+/*Footer*/
+footer{
+    margin: 3% 0;
+    padding: 3%;
+    background: linear-gradient(#132A90, #44B9F1);
+    color: white;
+
+}
+.social-footer{
+    font-size: 2em;
+    display: flex;
+    justify-content: space-evenly;
+}
+.text{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.footer-year{
+    font-size: 1.3em;
+}
+
+@media screen and (min-width:768px) {
+    header{
+        grid-template-areas:
+        "logo items";
+        
+    }
+    .logo{
+        justify-self: left;
+    }
+
+    .down-arrow{
+        display: none;
+    }
+   
+    .items{
+        background-color: var(--blue-king);
+        display: block;
+        display: flex;
+        justify-content:space-between ;
+        flex-direction: row;
+        justify-self: center;
+        
+    }
+     
+    }
