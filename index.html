@@ -5,44 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/styles.css">
+    <script src="https://kit.fontawesome.com/d5d81529d3.js" crossorigin="anonymous"></script>
     <title>KmilaC</title>
 </head>
 <body>
       <header>
           <div class="logo">
-              <img src="./src/img/" alt="Logo">
+              <img src="./src/img/logo.svg" alt="Logo">
           </div>
+          <section class="class="dropdown"">
+            <div class="down-arrow">
+                <input type="checkbox" id="chk-menu">
+                <label for="chk-menu" class="btn-dropdown">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
           <div class="items">
-              <h3>About me</h3>
-              <h3>Skills</h3>
-              <h3>Tools</h3>
-              <h3>Portfolio</h3>
-              <h3>Contact me</h3>
-              <div class="search">
+              <h3 class="item">About me</h3>
+              <h3 class="item">Skills</h3>
+              <h3 class="item">Tools</h3>
+              <h3 class="item">Portfolio</h3>
+              <h3 class="item">Contact me</h3>
+              <div class="item">
               <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
           </div>
-          <div class="social">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-          </div>
+        
+          </section>
       </header>
       <main>
           <section class="principal">
-              <h1>Camila Cipagauta</h1>
-              <h2>Frontend Developer</h2>
+            <div class="social">
+                <a href="">
+                <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="">
+                <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="">
+                <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <h1 class="title-one">Camila Cipagauta</h1>
+              <h2 class="title-two">Frontend Developer</h2>
+              <div class="btn-one">
               <a href="">
-                <button><h4>Contact me</h4></button>
+                <button class="btn"><h4>Contact me</h4></button>
               </a>
               <a href="">
-              <button><h4>CV</h4></button>
+              <button class="btn-outline" ><h4>CV</h4></button>
               </a>
+            </div>
 
-              <div class="right">
-                  <button><h4>Skills</h4></button>
-                  <img src="./src/img/" alt="image Camila">
-                  <button>Tools</button>
+              <div class="left">
+                  <button class="btn-color btn-right"><h4>Skills</h4></button>
+                  <img src="./src/img/prueba.jpg" alt="image Camila" width="300px">
+                  <button class="btn-color btn-left"><h4>Tools</h4></button>
 
               </div>
 
@@ -192,12 +209,12 @@
         <i class="fa-solid fa-phone"></i>
                         
         </div>
-        <div>
+        <div class="text">
             <h5>Info</h5>
             <h5>Support</h5>
             <h5>Contact</h5>
         </div>
-        <h6>@2022 KmilaC</h6>
+        <h6 class="footer-year">@2022 KmilaC</h6>
       </footer>
 </body>
 </html>
