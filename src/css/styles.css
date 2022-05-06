@@ -36,6 +36,9 @@ h2{
  p{
      color: white;
  }
+ a{
+     text-decoration: none;
+ }
  button{
      color: white;
      background-color:#8232D1;
@@ -168,32 +171,20 @@ h2{
 .aboutme{
     margin: 30px 0;
 }
-/*----------main skills----------*/
-.skills{
-    margin: 30px 0;
 
-}
 /*----------tools----------*/
 .tools{
     margin: 30px 0;
+}
+.tools-img{
+    width: 200px;
+
 }
 /*----------projects----------*/
 .projects{
     margin: 30px 0;
 }
-/*----------message----------*/
-.message{
-    margin: 30px 0;
-}
-.icons-two{
-    color: #8232d1;
-}
-.icons-three{
-    color: #CA6FFA;
-}
-.contact-one{
-    display: flex;
-}
+
 
 /*--------Botones----------*/
 .btn-outline{
@@ -209,18 +200,69 @@ h2{
 
 }
 /*----------Main skills----------*/
+
+.skills{
+    margin: 30px 0;
+
+}
 .icons{
     display: flex;
     justify-content: space-around;
+    font-size: 1.2em;
+    
 }
+.rectangle{
+    width: 90px;
+}
+
 .circle{
+    width: 40px;
+    height: 40px;
     border: none;
     background: rgb(178,90,236);
     background: linear-gradient(180deg, rgba(178,90,236,1) -4%, #8232d1 0%, rgba(155,71,223,1) 17%, rgba(178,90,236,1) 41%, rgba(144,119,237,1) 56%, rgba(126,135,238,1) 69%, rgba(89,167,240,1) 85%, rgba(68,185,241,1) 94%);
-    padding: 20%;
-    width: 50px;
+    padding: 10%;
     border-radius: 50%;
+   margin: 25% ;
+   
 }
+.second{
+    display: none;
+}
+/*-------Message---------*/
+.message{
+    margin: 30px 0;
+}
+    
+ .icons-two{
+    color: #8232d1;
+}
+.icons-three{
+    color: #CA6FFA;
+}
+.contact-one{
+    display: flex;
+}
+.contact{
+    margin: 3% 30%;
+}
+.contact-one{
+    padding: 5%;
+}
+.contact-one i{
+    padding: 0 5%;
+}
+.forms{
+    border: 2px solid var(--fucsia);
+    padding: 20px;
+    border-radius: 30px;
+
+}
+.form{
+    margin: 30px;
+}
+
+
 
 
 /*Footer*/
@@ -236,6 +278,10 @@ footer{
     font-size: 2em;
     display: flex;
     justify-content: space-evenly;
+}
+.social-footer a{
+    text-decoration: none;
+    color: white;
 }
 
 .text{
@@ -318,42 +364,83 @@ footer{
         grid-template-columns:auto auto ;
     
     }
+    .image-about{
+        margin: 50px;
+
+    }
+    .text-about{
+        margin: 2% 0;
+        
+    }
+    .text-about h2{
+        padding: 4% 0;
+    }
+    .text-about p{
+        padding: 5% 30%;
+    }
     /*----------Message----------*/
+    
+    .icons-two{
+        color: #8232d1;
+    }
+    .icons-three{
+        color: #CA6FFA;
+    }
+    .contact-one{
+        display: flex;
+    }
     .message{
         display: grid;
         grid-template-areas: 
         "right contact";
+        margin: 30px 0;
     }
     .right{
         grid-area: right;
-    }
-    .contact{
-        grid-area: contact;
+        grid-column: 1;
+        margin: 22% 0;
+        
     }
 
+    .left{
+        grid-area: contact;
+        margin: 3% 20%;
+        grid-column: 2;
+        grid-row: 1/5;
+        
+    }
+    .contact-one{
+        padding: 5%;
+
+    }
+    .tools-img{
+        width: 350px;
+    
+    }
      
+    .second{
+        display: block;
+    }
+    
     }
 
 @media screen and (min-width:1024px) {
 
     .left img{  
-        position: relative;
-        left: 210px;
+        grid-column: 2;
         
     }
     .btn-right{
         float: right;
-        position:sticky;
-        /*Averiguar cual position poner/*/
-        top: 5px;
-        right: 100px;
+        position:relative;
+        top: 10px;
+        right: 40px;
         margin: 0 15px 0 300px;
     }
     
     .btn-left{
         position: relative;
-        bottom: 10px;
-        right: 250px;
+        right: 10px;
         margin: 0 200px 0 10px;
     }
     /*----------tools----------*/
@@ -366,7 +453,12 @@ footer{
     .tools-img{
         margin: 0 20px;
     }
-    
+    .text-about h2{
+        padding: 0% 0;
+    }
+    .text-about p{
+        padding: 5% 4%;
+    }
 
 }
 
@@ -379,10 +471,8 @@ footer{
     }
     .btn-right{
         float: right;
-        position:sticky;
-        /*Averiguar cual position poner/*/
         top: 5px;
-        right: 100px;
+        right: 60px;
         margin: 0 15px 0 300px;
     }
     
